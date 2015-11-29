@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.8em;
+}
+cite {
+  font-size: .8em;
+  display: block;
+}
+body {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 2em;
+  max-width: 60em;
+  max-width: 60rem;
+  font-family: 'Quattrocento', serif;
+  font-weight:300;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+.left-indent {
+  padding-left: 4em;
+}
+@media all and (max-width:490px) {
+  body {
+    padding: 1em;
+    font-size: 1.1em;
+  }
+}
+.subtitle {
+  margin-bottom: 3em;
+}
+@media all and (max-width:490px) {
+  .subtitle {
+    margin-bottom: 2em;
+  }  
+}
+.title-shift {
+  padding: 0 .2em;
+}
+@media all and (min-width:491px) {
+  .title-shift {
+    position: absolute;
+    margin-left: -2em;    
+  }
+}
+@media all and (max-width:490px) {
+  .title-shift {
+    padding: 0 .2em;
+    margin-right: .5em;
+    min-width: 1.5em;
+    display: inline-block;
+  }
+}
+.title-interviewee {
+  border-bottom: 3px solid rgb(61, 225, 239);
+  border-bottom: 3px solid rgba(61, 225, 239, 0.7);
+}
+.title-interviewer {
+  border-bottom: 3px solid rgb(150, 61, 239);
+  border-bottom: 3px solid rgba(150, 61, 239, 0.7);
+}
+.strikethrough {
+  text-decoration: line-through;
+}

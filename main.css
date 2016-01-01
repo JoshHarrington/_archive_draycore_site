@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 1.8em;
+}
+cite {
+  font-size: .8em;
+  display: block;
+}
+body {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 2em;
+  max-width: 60em;
+  max-width: 60rem;
+  font-family: 'Quattrocento', serif;
+  font-weight:300;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+.left-indent {
+  padding-left: 4em;
+}
+@media all and (max-width:490px) {
+  body {
+    padding: 1em;
+    font-size: 1.1em;
+  }
+}
+.subtitle {
+  margin-bottom: 3em;
+}
+@media all and (max-width:490px) {
+  .subtitle {
+    margin-bottom: 2em;
+  }  
+}
+.title-shift {
+  padding: 0 .2em;
+}
+@media all and (min-width:491px) {
+  .title-shift {
+    position: absolute;
+    margin-left: -2em;    
+  }
+}
+@media all and (max-width:490px) {
+  .title-shift {
+    padding: 0 .2em;
+    margin-right: .5em;
+    min-width: 1.5em;
+    display: inline-block;
+  }
+}
+.title-interviewee {
+  border-bottom: 3px solid rgb(61, 225, 239);
+  border-bottom: 3px solid rgba(61, 225, 239, 0.7);
+}
+.title-interviewer {
+  border-bottom: 3px solid rgb(150, 61, 239);
+  border-bottom: 3px solid rgba(150, 61, 239, 0.7);
+}
+.strikethrough {
+  text-decoration: line-through;
+}
+
+section>*:first-child {
+  position: relative;
+}
+.sectionEmailLink {
+  position: absolute;
+  margin-left: -1.4em;
+  text-decoration: none;
+  height: 100%;
+  display: inline-block;
+}
+.sectionEmailLink .icon-email {
+  height: 1.5em;
+  width: 1em;
+  fill: #cee6ed;
+  transition:fill .2s;
+}
+h2 .sectionEmailLink .icon-email, h3 .sectionEmailLink .icon-email, h4 .sectionEmailLink .icon-email {
+  height: 1.1em;
+}
+.sectionEmailLink:hover .icon-email {
+  fill: #b7d9e3;
+}
+@media all and (max-width:978px) {
+  .sectionEmailLink {
+    margin-left: -1.15em;
+  }
+}
+@media all and (max-width:490px) {
+  .sectionEmailLink {
+    position: relative;
+    margin-left: 0;
+    margin-right: .4em;
+    display: block;
+  }
+  .sectionEmailLink .icon-email {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  h2 .sectionEmailLink, h3 .sectionEmailLink {
+    margin-bottom: .2em;
+  }
+}
+
+.note {
+  text-align: right;
+  border-bottom: 2px solid #daf1f8;
+  font-size: .8em;
+}
+.note .icon-email {
+  height: 1em;
+  width: 1em;
+  margin: 0 .2em -.1em;
+  display: inline;
+  fill:#505050;
+}
+
+.note * {
+  margin: 0;
+}
+.note .extend>span, .note>*:first-child {
+  padding: .4em .6em;
+  display: block;
+}
+.note .extend, .note>*:first-child {
+  background-color: #daf1f8;
+}
+.extend-contact {
+  background: #c7e8f2;
+}
+.note .extend {
+  display: block;
+  text-align: left;
+}
+.note>*:first-child {
+  cursor: pointer;
+  display: inline-block;
+   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
